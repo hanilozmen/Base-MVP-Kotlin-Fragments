@@ -1,7 +1,19 @@
 # Base-MVP-Kotlin-Fragments
-MVP pattern based Android Kotlin project. It is a base project which uses 3 tabbed bottom navigation view and fragments in a tabRoot/detail relationship
+MVP pattern based Android Kotlin project. It is a base project which uses 3 tabbed bottom navigation view and fragments 
+in a tabRoot/detail relationship.
 
+It does not use a third party library, just native APIs: ConstraintLayout, Appcompat, MaterialDesign and Androidx-kotlin
 
+[Demo APK](https://github.com/hanilozmen/Base-MVP-Kotlin-Fragments/blob/master/apk/demo.apk)
+
+<img src="apk/ss1.png" width="200px"></img>
+<img src="apk/ss5.png" width="200px"></img>
+<img src="apk/ss3.png" width="200px"></img>
+<img src="apk/ss4.png" width="200px"></img>
+
+----------------------------
+ <br>
+ <br>
 
   Copyright [2019] [hanilozmen]
 
