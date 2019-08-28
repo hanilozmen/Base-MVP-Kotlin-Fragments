@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Base MVP Fragmented Kotlin</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_settings">Settings</string>
+
+</resources>
