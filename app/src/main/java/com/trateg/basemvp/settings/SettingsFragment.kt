@@ -1,18 +1,19 @@
-package com.trateg.sticker.settings
+package com.trateg.basemvp.settings
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.R
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
  * Created by hanilozmen on 8/24/2019.
  */
-class SettingsFragment: BaseFragment(), SettingsContract.View {
+class SettingsFragment: BaseFragment(),
+    SettingsContract.View {
     private var mPresenter: SettingsContract.Presenter? = null
 
     private lateinit var mRootView : View

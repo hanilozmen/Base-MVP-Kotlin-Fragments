@@ -1,15 +1,13 @@
-package com.trateg.sticker.main
+package com.trateg.basemvp.main
 
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.trateg.sticker.BaseActivity
-import com.trateg.sticker.R
-import com.trateg.sticker.home.HomeFragment
-import com.trateg.sticker.home.HomePresenter
-import com.trateg.sticker.profile.ProfileFragment
-import com.trateg.sticker.profile.ProfilePresenter
-import com.trateg.sticker.settings.SettingsPresenter
+import com.trateg.basemvp.BaseActivity
+import com.trateg.basemvp.R
+import com.trateg.basemvp.home.HomePresenter
+import com.trateg.basemvp.profile.ProfilePresenter
+import com.trateg.basemvp.settings.SettingsPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**

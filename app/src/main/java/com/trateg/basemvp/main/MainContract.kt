@@ -1,11 +1,11 @@
-package com.trateg.sticker.main
+package com.trateg.basemvp.main
 
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.BasePresenter
-import com.trateg.sticker.BaseView
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.BasePresenter
+import com.trateg.basemvp.BaseView
 /**
  * Created by hanilozmen on 8/24/2019.
  */

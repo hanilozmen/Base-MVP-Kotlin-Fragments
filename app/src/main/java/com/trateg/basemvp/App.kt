@@ -1,4 +1,4 @@
-package com.trateg.sticker
+package com.trateg.basemvp
 
 import android.app.Application
 

@@ -1,7 +1,7 @@
-package com.trateg.sticker.home
+package com.trateg.basemvp.home
 
-import com.trateg.sticker.BasePresenter
-import com.trateg.sticker.BaseView
+import com.trateg.basemvp.BasePresenter
+import com.trateg.basemvp.BaseView
 
 /**
  * Created by hanilozmen on 8/24/2019.
@@ -12,6 +12,6 @@ interface HomeContract{
         fun addFragment()
     }
 
-    interface View: BaseView<Presenter>{
+    interface View: BaseView<Presenter> {
     }
 }

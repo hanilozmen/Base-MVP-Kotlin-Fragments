@@ -1,7 +1,7 @@
-package com.trateg.sticker.profile
+package com.trateg.basemvp.profile
 
-import com.trateg.sticker.BasePresenter
-import com.trateg.sticker.BaseView
+import com.trateg.basemvp.BasePresenter
+import com.trateg.basemvp.BaseView
 
 /**
  * Created by hanilozmen on 8/24/2019.
@@ -12,6 +12,7 @@ interface ProfileContract{
         fun addFragment()
     }
 
-    interface View: BaseView<Presenter>{
+    interface View:
+        BaseView<Presenter> {
     }
 }

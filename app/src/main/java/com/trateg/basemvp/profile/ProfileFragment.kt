@@ -1,18 +1,19 @@
-package com.trateg.sticker.profile
+package com.trateg.basemvp.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.R
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.R
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 /**
  * Created by hanilozmen on 8/24/2019.
  */
-class ProfileFragment: BaseFragment(), ProfileContract.View{
+class ProfileFragment: BaseFragment(),
+    ProfileContract.View {
     private lateinit var mRootView : View
     private var mPresenter: ProfileContract.Presenter? = null
 

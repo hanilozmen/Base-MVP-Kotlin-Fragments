@@ -1,13 +1,14 @@
-package com.trateg.sticker.profile
+package com.trateg.basemvp.profile
 
 import android.os.Bundle
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.util.FragMan
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.util.FragMan
 
 /**
  * Created by hanilozmen on 8/24/2019.
  */
-class ProfilePresenter(var mView: ProfileContract.View?): ProfileContract.Presenter {
+class ProfilePresenter(var mView: ProfileContract.View?):
+    ProfileContract.Presenter {
     companion object {
         const val KEY_TITLE: String = "KEY_TITLE"
         var mFragmentCount = 0
@@ -30,7 +31,13 @@ class ProfilePresenter(var mView: ProfileContract.View?): ProfileContract.Presen
 
     override fun addFragment() {
         mFragmentCount++
-        val ınstance = newInstance(Bundle().also {it.putString(KEY_TITLE,"Profile $mFragmentCount")})
+        val ınstance =
+            newInstance(Bundle().also {
+                it.putString(
+                    KEY_TITLE,
+                    "Profile $mFragmentCount"
+                )
+            })
         FragMan.addFragment(ınstance)
     }
 

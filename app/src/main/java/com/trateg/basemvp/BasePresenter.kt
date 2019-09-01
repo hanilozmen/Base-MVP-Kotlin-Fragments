@@ -1,4 +1,4 @@
-package com.trateg.sticker
+package com.trateg.basemvp
 /**
  * Created by hanilozmen on 8/24/2019.
  */

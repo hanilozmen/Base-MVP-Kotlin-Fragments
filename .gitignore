@@ -17,7 +17,7 @@
 /captures
 .externalNativeBuild
 .cxx
-
+.idea/
 
 # Built application files
 *.ap_

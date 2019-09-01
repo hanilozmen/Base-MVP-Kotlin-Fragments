@@ -1,13 +1,14 @@
-package com.trateg.sticker.settings
+package com.trateg.basemvp.settings
 
 import android.os.Bundle
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.util.FragMan
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.util.FragMan
 
 /**
  * Created by hanilozmen on 8/24/2019.
  */
-class SettingsPresenter(var mView: SettingsContract.View?) : SettingsContract.Presenter {
+class SettingsPresenter(var mView: SettingsContract.View?) :
+    SettingsContract.Presenter {
 
     companion object{
         const val KEY_TITLE: String = "KEY_TITLE"
@@ -29,7 +30,13 @@ class SettingsPresenter(var mView: SettingsContract.View?) : SettingsContract.Pr
 
     override fun addFragment() {
         mFragmentCount++
-        val instance = newInstance(Bundle().also {it.putString(KEY_TITLE,"Settings $mFragmentCount")})
+        val instance =
+            newInstance(Bundle().also {
+                it.putString(
+                    KEY_TITLE,
+                    "Settings $mFragmentCount"
+                )
+            })
         FragMan.addFragment(instance)
     }
 

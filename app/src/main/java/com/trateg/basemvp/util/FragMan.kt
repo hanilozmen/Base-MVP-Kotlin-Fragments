@@ -1,17 +1,15 @@
-package com.trateg.sticker.util
+package com.trateg.basemvp.util
 
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.core.view.forEach
-import androidx.core.view.forEachIndexed
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.trateg.sticker.BaseFragment
-import com.trateg.sticker.R
-import com.trateg.sticker.home.HomePresenter
-import com.trateg.sticker.profile.ProfilePresenter
-import com.trateg.sticker.settings.SettingsPresenter
+import com.trateg.basemvp.BaseFragment
+import com.trateg.basemvp.R
+import com.trateg.basemvp.home.HomePresenter
+import com.trateg.basemvp.profile.ProfilePresenter
+import com.trateg.basemvp.settings.SettingsPresenter
 import java.io.Serializable
 
 /**
@@ -51,7 +49,7 @@ object FragMan : FragManContract() {
         setBottomNavigationListener()
     }
 
-    override fun addFragment( fragment: BaseFragment, tag: String?, inStack: Boolean?, addAndHide: Boolean?) {
+    override fun addFragment(fragment: BaseFragment, tag: String?, inStack: Boolean?, addAndHide: Boolean?) {
         if(mFragmentManager?.beginTransaction() == null) return
         var ft = mFragmentManager!!.beginTransaction()
         var formattedTag = tag
@@ -83,9 +81,12 @@ object FragMan : FragManContract() {
     }
 
     override fun initRootFragments() {
-        val homeFragment = HomePresenter.newInstance(Bundle().also {it.putString(HomePresenter.KEY_TITLE,"Home Root") })
-        val profileFragment = ProfilePresenter.newInstance(Bundle().also { it.putString(ProfilePresenter.KEY_TITLE,"Profile Root")})
-        val settingsFragment = SettingsPresenter.newInstance(Bundle().also { it.putString(SettingsPresenter.KEY_TITLE,"Settings Root")})
+        val homeFragment = HomePresenter.newInstance(Bundle().also {it.putString(
+            HomePresenter.KEY_TITLE,"Home Root") })
+        val profileFragment = ProfilePresenter.newInstance(Bundle().also { it.putString(
+            ProfilePresenter.KEY_TITLE,"Profile Root")})
+        val settingsFragment = SettingsPresenter.newInstance(Bundle().also { it.putString(
+            SettingsPresenter.KEY_TITLE,"Settings Root")})
         var tabRootFragments = ArrayList<BaseFragment>()
         tabRootFragments.add(profileFragment)
         tabRootFragments.add(settingsFragment)

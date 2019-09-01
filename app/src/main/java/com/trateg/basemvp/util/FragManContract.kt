@@ -1,9 +1,9 @@
-package com.trateg.sticker.util
+package com.trateg.basemvp.util
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.trateg.sticker.BaseFragment
+import com.trateg.basemvp.BaseFragment
 import java.io.Serializable
 
 /**
